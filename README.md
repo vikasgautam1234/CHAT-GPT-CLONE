@@ -8,3 +8,9 @@ COLORS- with the help of this package we will get the option to print the colors
 
 <!-- MONGODB CONNECTION -->
 <!-- FOR UI I HAVE USED THE MATERIAL UI LIBRARY   -->
+ LIBRARIES INSTALLED IN CLIENT ARE:-
+ 1- AXIOS - it will deal with network request because our rest API's are in the node server 
+ 2- REACT-ROUTER-DOM - it will check the routing functionality in the react app
+ 3 MATERIAL UI -Material UI is an open-source React component library
+
+ <!-- MVC pattern(MODEL,VIEW(routes) & CONTROLLER) -->
