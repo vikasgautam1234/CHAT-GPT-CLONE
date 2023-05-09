@@ -4,6 +4,7 @@ const cors = require('cors')
 const colors = require('colors')
 const dotenv = require('dotenv')
 const connectDB = require('./config/db')
+const authRoutes = require('./routes/authRoutes')
 
 //dotenv
 dotenv.config()
@@ -19,6 +20,10 @@ app.use(morgan("dev"))    //with the help of dev we will get the short URL link 
 
 
 const PORT = process.env.PORT || 8080
+
+//API router
+app.use('/api/v1/auth', authRoutes)  //URL pattern
+
 app.listen(PORT,()=>{
     console.log(`Server running in ${process.env.DEV_MODE} on port no ${PORT}`.bgCyan.white)
 }) 
