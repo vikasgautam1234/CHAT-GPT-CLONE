@@ -5,6 +5,7 @@ const colors = require('colors')
 const dotenv = require('dotenv')
 const connectDB = require('./config/db')
 const authRoutes = require('./routes/authRoutes')
+const errorHandler = require('./middlewares/errorMiddleware')
 
 //dotenv
 dotenv.config()
@@ -17,7 +18,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use(morgan("dev"))    //with the help of dev we will get the short URL link in the console
-
+app.use(errorHandler)
 
 const PORT = process.env.PORT || 8080
 

@@ -14,3 +14,7 @@ COLORS- with the help of this package we will get the option to print the colors
  3 MATERIAL UI -Material UI is an open-source React component library
 
  <!-- MVC pattern(MODEL,VIEW(routes) & CONTROLLER) -->
+
+ <!-- MIDDLEWATE & LOGIN REGISTER API -->
+ 1-created the errorResponse file 
+ 2- to handle the errors i have created the ERRORMIDDLEWARE FILE
