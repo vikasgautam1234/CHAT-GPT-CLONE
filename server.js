@@ -2,6 +2,7 @@ const express = require('express')
 const morgan = require('morgan')
 const cors = require('cors')
 const colors = require('colors')
+const bodyParser = require("body-parser");
 const dotenv = require('dotenv')
 const connectDB = require('./config/db')
 const authRoutes = require('./routes/authRoutes')
@@ -17,6 +18,7 @@ const app = express()
 //middlewares
 app.use(cors())
 app.use(express.json())
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan("dev"))    //with the help of dev we will get the short URL link in the console
 app.use(errorHandler)
 
