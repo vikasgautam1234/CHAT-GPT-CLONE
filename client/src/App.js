@@ -2,6 +2,7 @@
 import './App.css';
 import {Routes,Route} from 'react-router-dom'    //Routes is a cointainer and we can perform routing with the help of it.
 import { useMemo } from 'react';
+import { Toaster } from 'react-hot-toast';
 import { themeSettings } from './theme';
 import { CssBaseline, ThemeProvider} from '@mui/material'
 import { createTheme } from '@mui/material/styles';
@@ -17,6 +18,7 @@ function App() {
     <ThemeProvider theme = {theme}>
       <CssBaseline/>
     <Navbar/>
+    <Toaster/>
     <Routes>
       {/* with the help of ELEMENT we can show the component  */}
       <Route path="/" element= {<Homepage/>}/>  
